@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdenOS Gaming | Pro Game Hub</title>
+    <style>
+        :root {
+            --bg-dark: #0b0f19;
+            --bg-card: #131b2e;
+            --accent: #00ffcc;
+            --text-main: #f8f9fa;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(11, 15, 25, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent);
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+            width: 100%;
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, rgba(157, 78, 221, 0.25), rgba(0, 255, 204, 0.15));
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-text h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero-text p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 18px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .game-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 255, 204, 0.15);
+        }
+
+        .game-thumb {
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+
+        .game-info {
+            padding: 1rem;
+        }
+
+        .game-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .game-cat {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <span>ADENOS</span> GAMING
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero-banner">
+            <div class="hero-text">
+                <h1>AdenOS Pro Oyun Merkezi</h1>
+                <p>En havalı araba, savaş ve aksiyon oyunları burada!</p>
+            </div>
+        </div>
+
+        <div class="section-title">Popüler Oyunlar (Tıkla ve Oyna)</div>
+
+        <div class="game-grid">
+            <a class="game-card" href="https://games.gamedistribution.com/1a78f24b27ee475a9630c79eb4a68212/" target="_blank">
+                <div class="game-thumb">🏎️</div>
+                <div class="game-info">
+                    <div class="game-title">Cyber Truck Drift</div>
+                    <div class="game-cat">ARABA</div>
+                </div>
+            </a>
+
+            <a class="game-card" href="https://html5.gamedistribution.com/rvvASMiM/c6f78f886fa8473bb074900a7b5bc645/" target="_blank">
+                <div class="game-thumb">🏍️</div>
+                <div class="game-info">
+                    <div class="game-title">Moto X3M Stunt</div>
+                    <div class="game-cat">YARIŞ</div>
+                </div>
+            </a>
+
+            <a class="game-card" href="https://html5.gamedistribution.com/rvvASMiM/a87a2a7071254bf6b4b476e3366c303f/" target="_blank">
+                <div class="game-thumb">🚗</div>
+                <div class="game-info">
+                    <div class="game-title">Highway Racer 3D</div>
+                    <div class="game-cat">ARABA</div>
+                </div>
+            </a>
+
+            <a class="game-card" href="https://html5.gamedistribution.com/rvvASMiM/a87a2a7071254bf6b4b476e3366c303f/" target="_blank">
+                <div class="game-thumb">⚔️</div>
+                <div class="game-info">
+                    <div class="game-title">Stickman Battle</div>
+                    <div class="game-cat">SAVAŞ</div>
+                </div>
+            </a>
+
+            <a class="game-card" href="https://games.gamedistribution.com/f201083416e94efca5f3b769f3792019/" target="_blank">
+                <div class="game-thumb">🧟</div>
+                <div class="game-info">
+                    <div class="game-title">Zombie Apocalypse</div>
+                    <div class="game-cat">AKSİYON</div>
+                </div>
+            </a>
+
+            <a class="game-card" href="https://html5.gamedistribution.com/rvvASMiM/1e7b264b971542fca14c776856a93d25/" target="_blank">
+                <div class="game-thumb">✈️</div>
+                <div class="game-info">
+                    <div class="game-title">Air Jet Combat</div>
+                    <div class="game-cat">SAVAŞ</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
